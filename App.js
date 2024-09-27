@@ -12,7 +12,7 @@ export default function App() {
   };
   return (
     <PaperProvider theme={theme}>
-      <StatusBar style="auto" />
+      <StatusBar style="light" backgroundColor='#202020' />
       <UserProfile />
     </PaperProvider>
   );
