@@ -41,7 +41,7 @@ const styles = StyleSheet.create({
     },
     avatar: {
         backgroundColor: 'white',
-        marginTop: 10
+        marginTop: 40
     },
     username: {
         fontSize: 35,

@@ -49,6 +49,7 @@ const Applications = () => {
                                     <Image source={{ uri: application.icon }} style={{ width: 40, height: 40, marginRight: 10 }} />
                                     <Text style={styles.applicationTitle}>{application.name}</Text>
                                 </View>
+                                <View style={styles.switchBtn}>
                                 <Switch
                                     style={styles.switch}
                                     thumbColor={application.isEnabled ? '#4abd77' : 'lightgray'}
@@ -62,6 +63,7 @@ const Applications = () => {
                                         }))
                                     }}
                                 />
+                                </View>
                             </View>
                         ))
                 }
@@ -91,14 +93,17 @@ const styles = StyleSheet.create({
         flexDirection: 'row',
         alignItems: 'center',
         gap: 5,
-        flex: 3
+        width: '65%'
     },
     applicationTitle: {
         fontSize: 20,
     },
+    switchBtn: {
+        width: '35%',
+        alignItems: 'flex-end'
+    },
     switch: {
-        flex: 1,
-        transform: [{ scaleX: 1.3 }, { scaleY: 1.3 }] 
+        transform: [{ scaleX: 1.3 }, { scaleY: 1.3 }],
     }
 });
 
